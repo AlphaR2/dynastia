@@ -23,7 +23,7 @@ const Disconnected: FC = () => {
   );
 
   return (
-    <div>
+    
       <div className="flex flex-col gap-6 justify-center items-center">
         <h2 className="flex text-center text-sm lg:text-xl font-semibold lg:font-bold uppercase leading-5 lg:leading-10 mx-2 lg:mx-56">
           Enter the Year of the Dragon, Conquer Solana
@@ -32,12 +32,11 @@ const Disconnected: FC = () => {
 
         <button 
         onClick={handleClick}
-        className="flex items-center gap-2 text-xl mt-4 font-semibold">
-         Go to Blacksmith <ArrowForwardIcon
-         className="font-bold text-3xl" />
+        className="flex gap-2 text-xl text-center mt-12 font-semibold hover:bg-black bg-[#021356] rounded-xl p-2">
+         Go to Blacksmith
         </button>
       </div>
-    </div>
+  
   );
 };
 

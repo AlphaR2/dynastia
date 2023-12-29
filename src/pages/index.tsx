@@ -4,7 +4,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Disconnected from "../components/Disconnected";
 import NavBar from "@/components/Navbar";
-import Connected from "@/components/connected";
+import Connected from "@/components/Connected";
 
 const Home: NextPage = () => {
   const { connected } = useWallet();
@@ -25,18 +25,6 @@ const Home: NextPage = () => {
           <Spacer />
           <Center>{connected ? <Connected /> : <Disconnected />}</Center>
           <Spacer />
-
-          <Center>
-            <Box marginBottom={4} color="white">
-              <a
-                href="https://twitter.com/_buildspace"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                built with @_buildspace
-              </a>
-            </Box>
-          </Center>
         </Stack>
       </Box>
     </div>
